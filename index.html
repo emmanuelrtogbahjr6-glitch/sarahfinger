@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Webpage</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sarah's Finger | Premium Pastries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+
+  <body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+      <nav>
+
+        <div class="logo">
+          Sarah's <span>Finger</span>
+        </div>
+
+
+        <ul class="nav-links">
+
+          <li><a href="#home">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+
+
+          <li><a href="products.html">Pastries</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart
+              <span id="cart-count">0</span>
+            </a>
+          </li>
+          <li><a href="checkout.html">Checkout</a></li>
+
+
+        </ul>
+
+
+        <div class="nav-icons">
+
+          <button id="darkMode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+
+        </div>
+
+
+      </nav>
+
+    </header>
+
+
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+
+      <div class="hero-content">
+
+        <h1>
+          The Taste you don't want to Miss.
+        </h1>
+
+
+        <p>
+          Welcome to Sarah's Finger. Enjoy delicious cakes, pastries and desserts freshly prepared for every special
+          moment.
+        </p>
+
+
+        <a href="#products" class="btn">
+          Shop Now
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products" id="products">
+
+
+      <h2>
+        Our Popular Pastries
+      </h2>
+
+
+      <div class="product-grid">
+
+
+
+        <div class="product-card">
+
+
+          <img src="Image Folder/Cookie.jpg" alt="Short Bread">
+
+
+          <h3>
+            Short Bread
+          </h3>
+
+
+          <p>
+            Flaky golden pastry with a rich buttery taste.
+          </p>
+
+
+          <div class="price">
+            $4
+          </div>
+
+
+          <button onclick="addToCart('Short Bread',4)">
+            Add To Cart
+          </button>
+
+
+        </div>
+
+
+
+
+
+        <div class="product-card">
+
+
+          <img src="Image Folder/images (1).jpg" alt="Cake">
+
+
+          <h3>
+            Cake
+          </h3>
+
+
+          <p>
+            Soft cake layers with creamy frosting.
+          </p>
+
+
+          <div class="price">
+            $18
+          </div>
+
+
+          <button onclick="addToCart('Cake',18)">
+            Add To Cart
+          </button>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="product-card">
+
+
+          <img src="Image Folder/Corn Bread.jpg" alt="Corn Bread">
+
+
+          <h3>
+            Corn Bread
+          </h3>
+
+
+          <p>
+            Fresh Corn Bread with delicious taste.
+          </p>
+
+
+          <div class="price">
+            $6
+          </div>
+
+
+          <button onclick="addToCart('Corn Bread',6)">
+            Add To Cart
+          </button>
+
+
+        </div>
+        <div class="product-card">
+
+
+          <img src="Image Folder/dognut.jpg" alt="Dognut">
+
+
+          <h3>
+            Dognut
+          </h3>
+
+
+          <p>
+            Freshly made with Care.
+          </p>
+
+
+          <div class="price">
+            $2
+          </div>
+
+
+          <button onclick="addToCart('Corn Bread',2)">
+            Add To Cart
+          </button>
+
+
+        </div>
+ <div class="product-card">
+
+
+          <img src="Image Folder/hotdog.jpg" alt="Hot Dog">
+
+
+          <h3>
+            Hot Dog
+          </h3>
+
+
+          <p>
+            Made with Love.
+          </p>
+
+
+          <div class="price">
+            $10
+          </div>
+
+
+          <button onclick="addToCart('Hot Dog',10)">
+            Add To Cart
+          </button>
+
+
+        </div>
+
+ <div class="product-card">
+
+
+          <img src="Image Folder/baked chicken.jpg" alt="Baked Chicken">
+
+
+          <h3>
+            Baked Chicken
+          </h3>
+
+
+          <p>
+            Well prepared and Season.
+          </p>
+
+
+          <div class="price">
+            $5
+          </div>
+
+
+          <button onclick="addToCart('Baked Chicken',5)">
+            Add To Cart
+          </button>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- WHATSAPP ORDER -->
+
+    <a class="whatsapp" href="https://wa.me/231771718766" target="_blank">
+
+      <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+
+
+
+
+
+    <!-- MOBILE ORDER BUTTON -->
+
+    <a href="checkout.html" class="mobile-order">
+
+      Order Now
+
+    </a>
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+
+    <footer>
+
+
+      <h3>
+        Sarah's Finger
+      </h3>
+
+
+      <p>
+        Fresh pastries | Cakes | Desserts
+      </p>
+
+
+      <p>
+        © 2026 Sarah's Finger. All Rights Reserved.
+      </p>
+
+
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+
+  </body>
+
+  </html>
+</body>
+
+</html>

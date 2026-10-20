@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+</head>
+<body>
+   
+
+<header>
+    <header>
+
+<nav>
+
+<div class="logo">
+Sarah's <span>Finger</span>
+</div>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+
+
+          <li><a href="#products">Pastries</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart
+              <span id="cart-count">0</span>
+            </a>
+            <li><a href="#checkout">Checkout</a></li>
+          </li>
+
+</ul>
+
+
+<div class="nav-icons">
+
+<button id="darkMode">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+
+<div class="menu">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+
+</div>
+
+ <div class="logo">
+            Sarah's <span>Finger</span>
+        </div>
+
+        <a href="index.html" style="text-decoration:none;">
+            <i class="fa-solid fa-arrow-left"></i>
+            Continue Shopping
+        </a>
+</nav>
+
+
+<main class="checkout-container">
+
+    <div style="margin-bottom:25px;">
+        <h1>Complete Your Order</h1>
+        <p>Fresh pastries, made with love.</p>
+    </div>
+
+    <form id="checkoutForm">
+
+        <div class="checkout-layout">
+
+            <div>
+
+                <!-- CUSTOMER DETAILS -->
+
+                <section class="checkout-card">
+                    <h2>
+                        <i class="fa-regular fa-user"></i>
+                        Customer Information
+                    </h2>
+
+                    <div class="form-group">
+                        <label for="customerName">Full Name *</label>
+                        <input
+                            type="text"
+                            id="customerName"
+                            name="customerName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number *</label>
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            name="customerPhone"
+                            placeholder="+231..."
+                            autocomplete="tel"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address (Optional)</label>
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            name="customerEmail"
+                            placeholder="Enter your email">
+                    </div>
+                </section>
+
+                <!-- DELIVERY DETAILS -->
+
+                <section class="checkout-card">
+                    <h2>
+                        <i class="fa-solid fa-truck"></i>
+                        Delivery Options
+                    </h2>
+
+                    <label class="delivery-option">
+                        <input
+                            type="radio"
+                            name="deliveryMethod"
+                            value="delivery"
+                            checked>
+
+                        <span>
+                            <strong>Home Delivery</strong>
+                            <small>Have your pastries delivered.</small>
+                        </span>
+                    </label>
+
+                    <label class="delivery-option">
+                        <input
+                            type="radio"
+                            name="deliveryMethod"
+                            value="pickup">
+
+                        <span>
+                            <strong>Store Pickup</strong>
+                            <small>Collect your order yourself.</small>
+                        </span>
+                    </label>
+
+                    <div id="deliveryFields">
+
+                        <div class="form-group">
+                            <label for="deliveryAddress">Delivery Address *</label>
+                            <input
+                                type="text"
+                                id="deliveryAddress"
+                                name="deliveryAddress"
+                                placeholder="Community, street, city"
+                                autocomplete="street-address"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="landmark">Nearby Landmark</label>
+                            <input
+                                type="text"
+                                id="landmark"
+                                name="landmark"
+                                placeholder="Nearby school, shop, or landmark">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderNotes">Special Instructions</label>
+                        <textarea
+                            id="orderNotes"
+                            name="orderNotes"
+                            placeholder="Cake message or other instructions"></textarea>
+                    </div>
+                </section>
+
+                <!-- PAYMENT METHOD -->
+
+                <section class="checkout-card">
+                    <h2>
+                        <i class="fa-regular fa-credit-card"></i>
+                        Payment Method
+                    </h2>
+
+                    <label class="payment-option">
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="MTN Mobile Money"
+                            required>
+
+                        <span>
+                            <strong>MTN Mobile Money</strong>
+                            <small>Arrange payment confirmation with our team.</small>
+                        </span>
+                    </label>
+
+                    <label class="payment-option">
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Orange Money">
+
+                        <span>
+                            <strong>Orange Money</strong>
+                            <small>Payment availability must be confirmed.</small>
+                        </span>
+                    </label>
+
+                    <label class="payment-option">
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Cash on Delivery">
+
+                        <span>
+                            <strong>Cash on Delivery / Pickup</strong>
+                            <small>Pay when receiving or collecting your order.</small>
+                        </span>
+                    </label>
+
+                    <p class="checkout-note">
+                        Mobile Money payments are not processed automatically
+                        on this page. Payment instructions will be confirmed
+                        with Sarah's Finger through WhatsApp.
+                    </p>
+                </section>
+
+            </div>
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="checkout-card">
+
+                <h2>Your Order</h2>
+
+                <div id="orderItems">
+                    <p>Loading cart...</p>
+                </div>
+
+                <div class="order-item">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">$0.00</strong>
+                </div>
+
+                <div class="order-item">
+                    <span>Delivery Fee</span>
+                    <strong id="deliveryFee">To be confirmed</strong>
+                </div>
+
+                <div class="order-total">
+                    <span>Estimated Total</span>
+                    <strong id="grandTotal">$0.00</strong>
+                </div>
+
+                <button type="submit" class="checkout-btn" id="placeOrderButton">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Place Order on WhatsApp
+                </button>
+
+                <a
+                    href="https://wa.me/231771718766"
+                    class="whatsapp-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Contact Sarah's Finger
+                </a>
+
+                <p class="checkout-note">
+                    Your order details will be sent to our WhatsApp business
+                    contact. Your order is not confirmed until our team
+                    acknowledges it.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sarah's Finger. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
